@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Font Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="menu"><i class="fa-solid fa-bars"></i></div>
+      <div class="stat-of-music">Now playing</div>
+      <div class="mode"><i class="fa-solid fa-moon"></i></div>
+    </header>
+    
+    <section>
+      <div class="photo">
+        <img src="Photos/tarek.jpg" alt="">
+      </div>
+      <div class="name-of-person"></div>
+    </section>
+
+    <div class="output">
+      <div class="time">
+        <span class="current-time">00:00</span>
+        <span class="finish-time">00:00</span>
+      </div>
+
+      <div class="progress-el">
+        <span class="current-progress"></span>
+      </div>
+    </div>
+
+    <footer class="control">
+      <div class="random"><i class="fa-solid fa-shuffle"></i></div>
+      <div class="prev"><i class="fa-solid fa-backward-step"></i></div>
+      <div class="play"><i class="fa-solid fa-play"></i></div>
+      <div class="next"><i class="fa-solid fa-forward-step"></i></div>
+      <div class="favorite"><i class="fa-regular fa-heart"></i></div>
+    </footer>
+  </div>
+
+  <audio src="audio/tarek.opus" id="music"></audio>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Main File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

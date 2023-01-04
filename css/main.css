@@ -1,0 +1,115 @@
+
+:root {
+  --darkColor: #111;
+  --whiteColor: #fff;
+  --shadowInDark: #08090ad9;
+  --shadowInLight: #eee;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--darkColor);
+  color: var(--whiteColor);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: var(--darkColor);
+  box-shadow: 4px 2px 11px var(--shadowInDark), -3px -3px 4px 0px #cccccc0d;
+  border-radius: 20px;
+  margin: 50px auto;
+  width: 350px;
+  height: 570px;
+  padding: 30px 25px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-of-person {
+  text-align: center;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+  font-weight: bold;
+}
+
+.photo {
+  padding: 20px;
+}
+
+.photo > img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--whiteColor);
+}
+
+.progress-el {
+  margin: auto;
+  width: 60%;
+  background: #777;
+  height: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+span.current-progress {
+  position: absolute;
+  width: 0;
+  background: var(--whiteColor);
+  height: 100%;
+}
+
+span.current-progress::before {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 1px;
+  width: 13px;
+  height: 13px;
+  background: var(--shadowInLight);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px 3px var(--darkColor);
+}
+
+i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.random > i, .favorite > i {
+  font-size: 16px;
+  color: #999;
+}
+
+.add-heart > i {
+  color: #e91e63;
+}
+
+.play > i {
+  font-size: 33px;
+}
+
+footer.control {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: center;
+}
+
+.play {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
